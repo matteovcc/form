@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Registrati</h1>
+        <p>Compilare i campi richiesti</p>
+        <form>
+            <fieldset>
+                <label for="first-name">
+                    Inserici il tuo nome:
+                    <input type="text" id="first-name" name="first-name" required />
+                </label>
+                <label for="last-name">
+                    Inserisci il tuo cognome:
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+                <label for="email">
+                    E-mail:
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label for="password">
+                    Crea una password:
+                    <input type="password" id="password" name="password" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="personal-account">
+                    <input type="radio" name="personal-account" id="personal-account" class="inline">
+                    Account Personale
+                </label>
+                <label for="business-account">
+                    <input type="radio" name="business-account" id="business-account" class="inline">
+                    Business Account
+                </label>
+                <label for="terms-service">
+                    <input type="checkbox" name="terms-service" id="terms-service" class="inline">
+                    Accetto i termini e servizi
+                </label>
+            </fieldset>
+                <label for="profile-picture">Carica foto profilo: <input id="profile-picture" type="file" name="file" /></label>
+                <label for="age">La tua età : <input id="age" type="number" name="age" min="13" max="120" /></label>
+                <label for="referrer">Nazionalità
+                <select id="referrer" name="referrer">
+                    <option value="">(seleziona)</option>
+                    <option value="1">Italia</option>
+                    <option value="2">Brazile</option>
+                    <option value="4">Altro</option>
+                </select>
+                </label>
+                <label for="bio">Scrivi qualcosa su di te:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="ciao ciao ..."></textarea>
+                </label>
+            </fieldset>
+                <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
